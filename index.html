@@ -1,55 +1,239 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine erste Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: #1e1e1e;
-            color: white;
-            margin-top: 100px;
-        }
+<title>JENGA TOWER PANAMA</title>
 
-        button {
-            padding: 15px 30px;
-            font-size: 18px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            background: #00aaff;
-            color: white;
-        }
+<style>
 
-        button:hover {
-            background: #0088cc;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-        #text {
-            margin-top: 20px;
-            font-size: 24px;
-        }
-    </style>
+body{
+font-family:Arial,sans-serif;
+background:#111;
+color:white;
+line-height:1.6;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(
+135deg,
+#0f0f0f,
+#1c3d5a,
+#204d3d
+);
+}
+
+.hero h1{
+font-size:5rem;
+letter-spacing:5px;
+}
+
+.hero p{
+font-size:1.3rem;
+margin-top:20px;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+font-size:2.5rem;
+margin-bottom:25px;
+color:#8fe5ff;
+}
+
+.card{
+background:#1d1d1d;
+padding:25px;
+margin:20px 0;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+.jenga{
+display:flex;
+flex-direction:column;
+align-items:center;
+margin-top:40px;
+}
+
+.block{
+width:300px;
+height:45px;
+background:#d9a86c;
+margin:10px;
+border-radius:6px;
+box-shadow:0 5px 15px rgba(0,0,0,.5);
+}
+
+.left{
+transform:translateX(-60px);
+}
+
+.right{
+transform:translateX(60px);
+}
+
+.center{
+transform:translateX(0);
+}
+
+footer{
+text-align:center;
+padding:50px;
+background:#000;
+}
+
+</style>
 </head>
+
 <body>
 
-    <h1>Hallo Botan 👋</h1>
+<div class="hero">
 
-    <button onclick="zeigeName()">
-        Klick mich!
-    </button>
+<div>
 
-    <p id="text"></p>
+<h1>JENGA TOWER</h1>
 
-    <script>
-        function zeigeName() {
-            document.getElementById("text").innerHTML =
-                "Dein Name ist Botan 🚀";
-        }
-    </script>
+<p>
+A Landmark for Panama City
+<br>
+Architecture • Sustainability • Innovation
+</p>
+
+</div>
+
+</div>
+
+<section>
+
+<h2>Konzept</h2>
+
+<div class="card">
+
+Der Turm basiert auf dem Prinzip gestapelter Jenga-Bausteine.
+Die gegeneinander verschobenen Volumen erzeugen Terrassen,
+natürliche Verschattung und spektakuläre Blickbeziehungen.
+Jede Verschiebung erfüllt dabei eine funktionale Aufgabe.
+
+</div>
+
+<div class="jenga">
+
+<div class="block left"></div>
+<div class="block center"></div>
+<div class="block right"></div>
+<div class="block left"></div>
+<div class="block center"></div>
+<div class="block right"></div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Nutzungen</h2>
+
+<div class="card">
+🏛 Erdgeschoss: Plaza, Restaurants, Cafés, Ausstellungshalle
+</div>
+
+<div class="card">
+💼 Office Floors: Flexible Büros und Co-Working
+</div>
+
+<div class="card">
+🏢 Premium Business Levels
+</div>
+
+<div class="card">
+🏠 Serviced Apartments
+</div>
+
+<div class="card">
+🌴 Luxuswohnungen mit Sky Gardens
+</div>
+
+<div class="card">
+🌅 Infinity Pool und Rooftop Restaurant
+</div>
+
+</section>
+
+<section>
+
+<h2>Nachhaltigkeit</h2>
+
+<div class="card">
+☀ Solarpanels auf Dachflächen
+</div>
+
+<div class="card">
+💧 Regenwasseraufbereitung
+</div>
+
+<div class="card">
+🌿 Vertikale Begrünung
+</div>
+
+<div class="card">
+🌬 Natürliche Belüftung durch Gebäudeeinschnitte
+</div>
+
+<div class="card">
+🪵 Hybrid-Holzbau und Recycling-Stahl
+</div>
+
+<div class="card">
+🏆 LEED Platinum Vision
+</div>
+
+</section>
+
+<section>
+
+<h2>Materialität</h2>
+
+<div class="card">
+
+Fassade aus Hochleistungs-Glas,
+integrierten Solarelementen,
+Naturstein-Sockel und vertikalen
+Pflanzstrukturen.
+
+Innen sorgen Holzoberflächen,
+Naturstein und nachhaltige
+Materialien für eine hochwertige
+Atmosphäre.
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>JENGA TOWER PANAMA</h3>
+
+<p>
+Designed by Kurdistan47 Studio
+</p>
+
+</footer>
 
 </body>
 </html>
+`
