@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine erste Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #1e1e1e;
+            color: white;
+            margin-top: 100px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background: #00aaff;
+            color: white;
+        }
+
+        button:hover {
+            background: #0088cc;
+        }
+
+        #text {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hallo Botan 👋</h1>
+
+    <button onclick="zeigeName()">
+        Klick mich!
+    </button>
+
+    <p id="text"></p>
+
+    <script>
+        function zeigeName() {
+            document.getElementById("text").innerHTML =
+                "Dein Name ist Botan 🚀";
+        }
+    </script>
+
+</body>
+</html>
