@@ -4,494 +4,108 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>JENGA TOWER PANAMA</title>
+<title>Cousin Teller Wahl</title>
 
 <style>
 
-:root{
---bg:#f7f4ee;
---beige:#e8ddc8;
---sand:#d1c0a2;
---brown:#8b7755;
---dark:#242424;
---white:#ffffff;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
-font-family:Segoe UI,sans-serif;
-background:var(--bg);
-color:var(--dark);
-overflow-x:hidden;
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f5f5f5;
+    font-family:Arial,sans-serif;
+    overflow:hidden;
 }
 
-section{
-padding:100px 10%;
+#container{
+    text-align:center;
 }
 
-.hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-background:
-linear-gradient(
-135deg,
-#f7f4ee,
-#ebe3d2,
-#ddd0b6
-);
-}
-
-.hero h1{
-font-size:6rem;
-letter-spacing:12px;
-}
-
-.hero p{
-margin-top:20px;
-font-size:1.3rem;
-color:#555;
-}
-
-.card{
-background:white;
-padding:40px;
-border-radius:20px;
-margin:25px 0;
-box-shadow:0 20px 40px rgba(0,0,0,.08);
-}
-
-h2{
-font-size:3rem;
-margin-bottom:30px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
-
-.metric{
-text-align:center;
-background:white;
-padding:40px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.06);
-}
-
-.metric h3{
-font-size:3rem;
-color:var(--brown);
-}
-
-.jenga{
-display:flex;
-flex-direction:column;
-align-items:center;
-margin-top:40px;
-}
-
-.block{
-height:60px;
-width:420px;
-background:linear-gradient(
-90deg,
-#c9ae84,
-#e2d2b8
-);
-margin:12px;
-border-radius:8px;
-box-shadow:0 8px 20px rgba(0,0,0,.1);
-}
-
-.left{
-transform:translateX(-120px);
-}
-
-.right{
-transform:translateX(120px);
-}
-
-.center{
-transform:translateX(0);
-}
-
-.skyline{
-height:500px;
-display:flex;
-align-items:flex-end;
-justify-content:center;
-gap:20px;
-padding:50px;
-background:white;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.tower{
-width:180px;
-height:420px;
-border-radius:10px;
-background:
-linear-gradient(
-180deg,
-#ded2bc,
-#bca27e
-);
-position:relative;
-}
-
-.shift{
-position:absolute;
-width:190px;
-height:60px;
-background:#dfd3bd;
-left:-20px;
-border-radius:6px;
-}
-
-.s1{
-top:80px;
-left:-50px;
-}
-
-.s2{
-top:180px;
-left:40px;
-}
-
-.s3{
-top:300px;
-left:-40px;
-}
-
-.materials{
-display:flex;
-gap:25px;
-flex-wrap:wrap;
-}
-
-.mat{
-width:180px;
-height:180px;
-border-radius:20px;
-display:flex;
-align-items:flex-end;
-justify-content:center;
-padding-bottom:15px;
-font-weight:bold;
-}
-
-.m1{
-background:#EFE8DA;
-}
-
-.m2{
-background:#D5C2A4;
-}
-
-.m3{
-background:#8C7758;
-color:white;
-}
-
-.m4{
-background:#ffffff;
-border:1px solid #ddd;
-}
-
-.floor{
-height:18px;
-background:#ffffff;
-margin:10px;
-border-radius:6px;
-}
-
-footer{
-padding:100px;
-text-align:center;
-background:#ede2cf;
-margin-top:80px;
+h1{
+    font-size:3rem;
+    margin-bottom:40px;
 }
 
 button{
-padding:15px 35px;
-border:none;
-border-radius:12px;
-background:#8b7755;
-color:white;
-cursor:pointer;
-font-size:1rem;
-margin-top:30px;
+    padding:15px 35px;
+    font-size:24px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
 }
 
-button:hover{
-opacity:0.9;
+#gurur{
+    background:#4CAF50;
+    color:white;
+    margin-right:20px;
 }
 
-#fact{
-margin-top:20px;
-font-size:1.1rem;
-font-weight:bold;
+#botan{
+    background:#f44336;
+    color:white;
+    position:absolute;
+}
+
+#result{
+    font-size:4rem;
+    font-weight:bold;
+    color:gold;
 }
 
 </style>
 </head>
-
 <body>
 
-<section class="hero">
+<div id="container">
 
-<div>
+    <h1>Nächstemal Cousin Teller auf wen? 🤔</h1>
 
-<h1>JENGA</h1>
-
-<p>
-PANAMA CITY LANDMARK
-<br>
-Architecture • Ecology • Urban Life
-</p>
+    <button id="gurur">Gurur</button>
 
 </div>
 
-</section>
-
-<section>
-
-<h2>Project Vision</h2>
-
-<div class="card">
-
-JENGA Tower is conceived as a vertical urban village.
-Stacked volumes inspired by Jenga blocks create terraces,
-natural shading, gardens, social spaces and panoramic views
-over Panama City.
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Key Figures</h2>
-
-<div class="grid">
-
-<div class="metric">
-<h3>240m</h3>
-Height
-</div>
-
-<div class="metric">
-<h3>52</h3>
-Floors
-</div>
-
-<div class="metric">
-<h3>65%</h3>
-Green Reduction
-</div>
-
-<div class="metric">
-<h3>LEED</h3>
-Platinum
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Jenga Concept</h2>
-
-<div class="jenga">
-
-<div class="block left"></div>
-<div class="block center"></div>
-<div class="block right"></div>
-<div class="block left"></div>
-<div class="block right"></div>
-<div class="block center"></div>
-<div class="block left"></div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Massing Study</h2>
-
-<div class="skyline">
-
-<div class="tower">
-
-<div class="shift s1"></div>
-<div class="shift s2"></div>
-<div class="shift s3"></div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Program Distribution</h2>
-
-<div class="card">
-
-<div class="floor"></div> Rooftop Sky Park
-
-<div class="floor"></div> Luxury Residences
-
-<div class="floor"></div> Serviced Apartments
-
-<div class="floor"></div> Hotel
-
-<div class="floor"></div> Premium Offices
-
-<div class="floor"></div> Flexible Workspaces
-
-<div class="floor"></div> Exhibition Hall
-
-<div class="floor"></div> Restaurants & Plaza
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Material Palette</h2>
-
-<div class="materials">
-
-<div class="mat m1">
-Travertine
-</div>
-
-<div class="mat m2">
-Timber
-</div>
-
-<div class="mat m3">
-Bronze
-</div>
-
-<div class="mat m4">
-Low-E Glass
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Sustainability</h2>
-
-<div class="grid">
-
-<div class="card">
-☀ Integrated Solar Panels
-</div>
-
-<div class="card">
-🌧 Rainwater Harvesting
-</div>
-
-<div class="card">
-🌿 Vertical Gardens
-</div>
-
-<div class="card">
-🌬 Natural Ventilation
-</div>
-
-<div class="card">
-🌎 Low Carbon Structure
-</div>
-
-<div class="card">
-💧 Greywater Recycling
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Interactive Project Overview</h2>
-
-<div class="card">
-
-<p>
-
-Click below to discover a design feature.
-
-</p>
-
-<button onclick="idea()">
-Reveal Feature
-</button>
-
-<div id="fact"></div>
-
-</div>
-
-</section>
-
-<footer>
-
-<h2>JENGA TOWER PANAMA</h2>
-
-<p>
-Conceptual Mixed-Use Landmark
-<br>
-Designed for Panama City
-</p>
-
-</footer>
+<button id="botan">Botan</button>
 
 <script>
 
-const facts = [
+const botan = document.getElementById("botan");
 
-"Sky gardens every 5 floors.",
-"Natural cross ventilation through shifted volumes.",
-"Panoramic rooftop overlooking Panama Bay.",
-"Mass timber hybrid structure.",
-"Public cultural hall at ground level.",
-"Integrated photovoltaic façade.",
-"Passive shading from cantilevered blocks.",
-"Large tropical terraces inspired by Panama climate."
+function moveButton(){
 
-];
+    const maxX = window.innerWidth - botan.offsetWidth;
+    const maxY = window.innerHeight - botan.offsetHeight;
 
-function idea(){
+    const x = Math.random() * maxX;
+    const y = Math.random() * maxY;
 
-const random =
-facts[Math.floor(
-Math.random() *
-facts.length
-)];
-
-document.getElementById("fact")
-.innerHTML=random;
-
+    botan.style.left = x + "px";
+    botan.style.top = y + "px";
 }
+
+moveButton();
+
+botan.addEventListener("mouseenter", moveButton);
+
+document.getElementById("gurur").addEventListener("click", () => {
+
+    document.body.innerHTML = `
+        <div style="
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-family:Arial;
+        font-size:6rem;
+        font-weight:bold;
+        color:gold;
+        background:#111;">
+            EHRENCHEF!!! 👑
+        </div>
+    `;
+
+});
 
 </script>
 
